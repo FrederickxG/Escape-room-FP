@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - key
   - door
+  - Gem
   layers:
   - Default
   - TransparentFX
