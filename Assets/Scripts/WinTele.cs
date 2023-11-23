@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class WinTele : MonoBehaviour
 {
-
-    public GameObject Gem;
-     private void OnTriggerEnter(Collider other)
+    public GameObject gem;
+    
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == Gem)
+        if (other.gameObject == gem)
         {
             // Collect the Gem
-            Gem.SetActive(false);
+            gem.SetActive(false);
 
-        SceneManager.LoadScene("Winner");
+            SceneManager.LoadScene("Winner");
+        }
     }
-  }
 }
